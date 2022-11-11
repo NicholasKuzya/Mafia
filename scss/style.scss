@@ -1,0 +1,452 @@
+@import './fonts';
+@import './header';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Avenir-reg';
+  background-color: #f9f9f9;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Avenir-bold';
+  font-size: 20px;
+  line-height: 27px;
+  color: #705658;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  font-family: 'Avenir-medium';
+  font-size: 14px;
+  color: #DC434E;
+  padding: 10px 20px;
+  border: 1px solid #DC434E;
+  border-radius: 3px;
+}
+
+.menu {
+  background-color: #d12c37;
+  padding: 0 50px;
+
+  .row {
+    justify-content: space-between;
+  }
+
+  .menu-nav {
+    display: flex;
+    position: relative;
+    margin: 26px 10px;
+
+    &__item {
+      color: #FFFFFF;
+
+      // .menu-nav__item--active
+      &--active::after {
+        width: 67px;
+        height: 2px;
+        position: absolute;
+        content: '';
+        background-color: #FFFFFF;
+        top: 35px;
+        left: 0px;
+      }
+    }
+
+    // .menu-nav__link
+    &__link {
+      margin-right: 40px;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 19px;
+      color: #FFFFFF;
+    }
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+      position: relative;
+    }
+
+    // .cart-total
+    &-total {
+      display: inline-block;
+      position: absolute;
+      padding: 2px;
+      background-color: #9E9E9E;
+      border-radius: 50%;
+      right: -6px;
+      top: -4px;
+      font-family: 'Avenir-medium';
+      font-size: 7px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    // .cart-info
+    &-info {
+      margin-left: 20px;
+      color: #ffffff;
+
+      p {
+        font-family: 'Avenir-reg';
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      span {
+        font-family: 'Avenir-medium';
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+.banner {
+  padding-top: 31px;
+
+  // .banner-image 
+  &-image {
+    width: 967px;
+    height: 504px;
+  }
+
+  .catalog {
+    background-color: #FFFFFF;
+    width: 303px;
+    height: 504px;
+
+    h2 {
+      text-align: left;
+      padding-top: 30px;
+      padding-left: 30px;
+    }
+
+    // .catalog-list
+    &-list {
+
+      // .catalog-list__item
+      &__item {
+        padding: 15px 0;
+        position: relative;
+
+        &:hover {
+          background-color: #FBECED;
+
+          &::before {
+            width: 5px;
+            height: 100%;
+            content: '';
+            position: absolute;
+            border-radius: 0 2px 2px 0;
+            background-color: #d93c47;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+
+      // .catalog-list__link
+      &__link {
+        font-family: 'Avenir-reg';
+        font-size: 14px;
+        color: #12212d;
+        padding-top: 30px;
+        padding-left: 30px;
+      }
+    }
+  }
+}
+
+.content {
+  padding-top: 80px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .card {
+    background-color: #FFFFFF;
+    width: 263px;
+    padding: 20px 20px 11px;
+
+    // .card-header
+    &-header {
+      span {
+        display: block;
+        margin-bottom: 10px;
+        font-family: 'Avenir-medium';
+        font-size: 14px;
+        line-height: 19px;
+        color: #4DA455;
+
+        &.empty {
+          color: #D0021B;
+        }
+      }
+    }
+
+    // .card-body
+    &-body {
+      padding: 20px 0 10px;
+      font-family: 'Avenir-medium';
+      font-size: 14px;
+      color: #12212DB2;
+    }
+
+    // .card-footer
+    &-footer {
+      &.row {
+        justify-content: space-between;
+      }
+
+      // .cars-footer__price
+      &__price {
+        font-family: 'Avenir-bold';
+        font-size: 14px;
+
+        span {
+          color: #705658;
+        }
+      }
+    }
+  }
+
+  // .content-nav
+  &-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    border-top: 1px solid #B7BCC0;
+
+    // .content-nav__btn
+    &__btn {
+      padding: 28px 25px;
+      border: 1px solid #B7BCC0;
+      border-top: none;
+
+      // .content-nav__btn--next
+      &--next {
+
+        border-left: none;
+      }
+    }
+  }
+}
+
+.other .row {
+  margin-top: 70px;
+  justify-content: space-evenly;
+
+  .card {
+    padding: 30px 30px 0 30px;
+    background-color: #e8e8e8;
+
+    // .card-name
+    &-name {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: left;
+    }
+
+    // .card-info
+    &-info {
+      display: flex;
+      align-items: center;
+
+      // .card-info__price
+      &__price {
+        margin-right: 121px;
+
+        span {
+          display: block;
+          font-family: 'Avenir-bold';
+          font-size: 30px;
+          line-height: 40px;
+          color: #ffffff;
+          margin-bottom: 20px;
+        }
+      }
+
+      // .card-info__btn
+      &__btn {
+        background-color: #da404b;
+        border: none;
+        border-radius: 3px;
+        padding: 16px 62px;
+        font-size: 14px;
+        line-height: 19px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.text-row {
+  margin-bottom: 60px;
+
+  h1 {
+    font-family: 'Avenir-bold';
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+    color: #705658;
+    margin-top: 60px;
+
+  }
+
+  p {
+    font-family: 'Avenir-medium';
+    font-size: 16px;
+    line-height: 22px;
+    color: #12212d;
+    margin-top: 30px;
+  }
+}
+
+.footer {
+  background-color: #c02336;
+  padding-top: 30px;
+
+  .row {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-col {
+
+    p {
+      font-family: 'Avenir-reg';
+      font-size: 14px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      font-family: 'Avenir-bold' !important;
+      font-size: 18px !important;
+      line-height: 24px;
+    }
+
+  }
+
+  &-list__link {
+    font-family: 'Avenir-reg';
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+  }
+
+  .contact {
+    &-item {
+      font-family: 'Avenir-bold';
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 10px;
+
+      a {
+        color: #e5e5e5;
+      }
+
+      &--email {
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &-social {
+      display: flex;
+      align-items: baseline;
+
+      &__item {
+        margin-right: 10px;
+      }
+
+      &__link {
+
+        background-color: #5d5d5d;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+
+        img {
+          width: 19px;
+          height: 19px;
+          box-sizing: content-box;
+
+        }
+      }
+    }
+  }
+
+  input {
+
+    font-family: 'Avenir-reg';
+    font-size: 14px;
+    line-height: 22px;
+    text-align: inherit;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #cd4f5e;
+    padding-bottom: 6px;
+    &::placeholder {
+      
+      color: #e8e8e8;
+    }
+  }
+
+  &-info__btn {
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    font-family: 'Avenir-medium';
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 10px 23px;
+
+    &--link {
+      font-family: 'Avenir-reg';
+      font-size: 14px;
+      line-height: 22px;
+      color: #e5e5e5;
+      text-decoration: revert;
+    }
+  }
+}

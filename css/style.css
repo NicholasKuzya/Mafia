@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "Avenir-reg";
+  src: url("../fonts/AvenirNextCyr-Regular.ttf");
+}
+@font-face {
+  font-family: "Avenir-bold";
+  src: url("../fonts/AvenirNextCyr-Bold.ttf");
+}
+@font-face {
+  font-family: "Avenir-medium";
+  src: url("../fonts/AvenirNextCyr-Medium.ttf");
+}
+@font-face {
+  font-family: "Avenir-demi";
+  src: url("../fonts/AvenirNextCyr-Demi.ttf");
+}
+.header {
+  background-color: #FFFFFF;
+  padding: 10px 0;
+}
+.header-logo p {
+  font-size: 14px;
+  line-height: 19px;
+}
+.header-search {
+  position: relative;
+}
+.header-search input {
+  width: 555px;
+  padding: 16px 0;
+  padding-left: 20px;
+}
+.header-search img {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-contact button {
+  font-family: "Avenir-demi";
+  font-weight: 500;
+  size: 14px;
+  line-height: 19px;
+  padding-left: 40px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+}
+.header-contact button::before {
+  width: 1px;
+  height: 40px;
+  background-color: #B7BCC0;
+  position: absolute;
+  content: "";
+  right: 88%;
+  top: -10px;
+}
+.header-contact a {
+  font-family: "Avenir-demi";
+  text-decoration: none;
+  color: #12212d;
+}
+.header-contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-contact__item span {
+  margin-left: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir-reg";
+  background-color: #f9f9f9;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Avenir-bold";
+  font-size: 20px;
+  line-height: 27px;
+  color: #705658;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn {
+  font-family: "Avenir-medium";
+  font-size: 14px;
+  color: #DC434E;
+  padding: 10px 20px;
+  border: 1px solid #DC434E;
+  border-radius: 3px;
+}
+
+.menu {
+  background-color: #d12c37;
+  padding: 0 50px;
+}
+.menu .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin: 26px 10px;
+}
+.menu .menu-nav__item {
+  color: #FFFFFF;
+}
+.menu .menu-nav__item--active::after {
+  width: 67px;
+  height: 2px;
+  position: absolute;
+  content: "";
+  background-color: #FFFFFF;
+  top: 35px;
+  left: 0px;
+}
+.menu .menu-nav__link {
+  margin-right: 40px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.menu .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu .cart-icon {
+  position: relative;
+}
+.menu .cart-total {
+  display: inline-block;
+  position: absolute;
+  padding: 2px;
+  background-color: #9E9E9E;
+  border-radius: 50%;
+  right: -6px;
+  top: -4px;
+  font-family: "Avenir-medium";
+  font-size: 7px;
+  text-align: center;
+  color: #ffffff;
+}
+.menu .cart-info {
+  margin-left: 20px;
+  color: #ffffff;
+}
+.menu .cart-info p {
+  font-family: "Avenir-reg";
+  font-size: 12px;
+  line-height: 16px;
+}
+.menu .cart-info span {
+  font-family: "Avenir-medium";
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.banner {
+  padding-top: 31px;
+}
+.banner-image {
+  width: 967px;
+  height: 504px;
+}
+.banner .catalog {
+  background-color: #FFFFFF;
+  width: 303px;
+  height: 504px;
+}
+.banner .catalog h2 {
+  text-align: left;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.banner .catalog-list__item {
+  padding: 15px 0;
+  position: relative;
+}
+.banner .catalog-list__item:hover {
+  background-color: #FBECED;
+}
+.banner .catalog-list__item:hover::before {
+  width: 5px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  border-radius: 0 2px 2px 0;
+  background-color: #d93c47;
+  top: 0;
+  left: 0;
+}
+.banner .catalog-list__link {
+  font-family: "Avenir-reg";
+  font-size: 14px;
+  color: #12212d;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.content {
+  padding-top: 80px;
+}
+.content h2 {
+  margin-bottom: 30px;
+}
+.content .card {
+  background-color: #FFFFFF;
+  width: 263px;
+  padding: 20px 20px 11px;
+}
+.content .card-header span {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Avenir-medium";
+  font-size: 14px;
+  line-height: 19px;
+  color: #4DA455;
+}
+.content .card-header span.empty {
+  color: #D0021B;
+}
+.content .card-body {
+  padding: 20px 0 10px;
+  font-family: "Avenir-medium";
+  font-size: 14px;
+  color: rgba(18, 33, 45, 0.6980392157);
+}
+.content .card-footer.row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content .card-footer__price {
+  font-family: "Avenir-bold";
+  font-size: 14px;
+}
+.content .card-footer__price span {
+  color: #705658;
+}
+.content-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  border-top: 1px solid #B7BCC0;
+}
+.content-nav__btn {
+  padding: 28px 25px;
+  border: 1px solid #B7BCC0;
+  border-top: none;
+}
+.content-nav__btn--next {
+  border-left: none;
+}
+
+.other .row {
+  margin-top: 70px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.other .row .card {
+  padding: 30px 30px 0 30px;
+  background-color: #e8e8e8;
+}
+.other .row .card-name {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: left;
+}
+.other .row .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.other .row .card-info__price {
+  margin-right: 121px;
+}
+.other .row .card-info__price span {
+  display: block;
+  font-family: "Avenir-bold";
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.other .row .card-info__btn {
+  background-color: #da404b;
+  border: none;
+  border-radius: 3px;
+  padding: 16px 62px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.text-row {
+  margin-bottom: 60px;
+}
+.text-row h1 {
+  font-family: "Avenir-bold";
+  font-size: 30px;
+  line-height: 40px;
+  text-align: left;
+  color: #705658;
+  margin-top: 60px;
+}
+.text-row p {
+  font-family: "Avenir-medium";
+  font-size: 16px;
+  line-height: 22px;
+  color: #12212d;
+  margin-top: 30px;
+}
+
+.footer {
+  background-color: #c02336;
+  padding-top: 30px;
+}
+.footer .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer-col p {
+  font-family: "Avenir-reg";
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.footer-col__title {
+  font-family: "Avenir-bold" !important;
+  font-size: 18px !important;
+  line-height: 24px;
+}
+.footer-list__link {
+  font-family: "Avenir-reg";
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.footer .contact-item {
+  font-family: "Avenir-bold";
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.footer .contact-item a {
+  color: #e5e5e5;
+}
+.footer .contact-item--email a {
+  color: #FFFFFF;
+}
+.footer .contact-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.footer .contact-social__item {
+  margin-right: 10px;
+}
+.footer .contact-social__link {
+  background-color: #5d5d5d;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.footer .contact-social__link img {
+  width: 19px;
+  height: 19px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.footer input {
+  font-family: "Avenir-reg";
+  font-size: 14px;
+  line-height: 22px;
+  text-align: inherit;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #cd4f5e;
+  padding-bottom: 6px;
+}
+.footer input::-webkit-input-placeholder {
+  color: #e8e8e8;
+}
+.footer input::-moz-placeholder {
+  color: #e8e8e8;
+}
+.footer input:-ms-input-placeholder {
+  color: #e8e8e8;
+}
+.footer input::-ms-input-placeholder {
+  color: #e8e8e8;
+}
+.footer input::placeholder {
+  color: #e8e8e8;
+}
+.footer-info__btn {
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  font-family: "Avenir-medium";
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 10px 23px;
+}
+.footer-info__btn--link {
+  font-family: "Avenir-reg";
+  font-size: 14px;
+  line-height: 22px;
+  color: #e5e5e5;
+  -webkit-text-decoration: revert;
+          text-decoration: revert;
+}
